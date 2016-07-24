@@ -1,0 +1,14 @@
+c:\visual Projects\MemGame\MemGame\bin\Debug\MemGame.exe.config
+c:\visual Projects\MemGame\MemGame\bin\Debug\MemGame.exe
+c:\visual Projects\MemGame\MemGame\bin\Debug\MemGame.pdb
+c:\visual Projects\MemGame\MemGame\obj\Debug\MemGame.csprojResolveAssemblyReference.cache
+c:\visual Projects\MemGame\MemGame\obj\Debug\MainWindow.g.cs
+c:\visual Projects\MemGame\MemGame\obj\Debug\App.g.cs
+c:\visual Projects\MemGame\MemGame\obj\Debug\MemGame_MarkupCompile.cache
+c:\visual Projects\MemGame\MemGame\obj\Debug\MemGame_MarkupCompile.lref
+c:\visual Projects\MemGame\MemGame\obj\Debug\MainWindow.baml
+c:\visual Projects\MemGame\MemGame\obj\Debug\MemGame.g.resources
+c:\visual Projects\MemGame\MemGame\obj\Debug\MemGame.Properties.Resources.resources
+c:\visual Projects\MemGame\MemGame\obj\Debug\MemGame.csproj.GenerateResource.Cache
+c:\visual Projects\MemGame\MemGame\obj\Debug\MemGame.exe
+c:\visual Projects\MemGame\MemGame\obj\Debug\MemGame.pdb
