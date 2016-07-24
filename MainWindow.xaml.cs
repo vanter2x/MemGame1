@@ -34,7 +34,8 @@ namespace MemGame
             
             game = new MemGame.Game(gdGame);
             game.RandomNr();
-            ImageBrush xx = new ImageBrush(1.png);
+            Image xx = new Image();
+            xx.Source = ImageSource()
             foreach (Button x in gdGame.Children)
             {
                 
