@@ -32,12 +32,12 @@ namespace MemGame
             {
                 ii = rand.Next(number.Count - 1);
                 b.Tag = number[ii];
-                Image x = new Image();
-                x.Source = "1.png";
+                //Image x = new Image();
+                //x.Source = "1.png";
 
                 number.RemoveAt(ii);
                 b.Content = b.Tag;
-                b.Content = x;
+               // b.Content = x;
             }
         }
         public void ClickButton(object sender, RoutedEventArgs e)

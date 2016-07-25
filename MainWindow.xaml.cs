@@ -34,14 +34,14 @@ namespace MemGame
             
             game = new MemGame.Game(gdGame);
             game.RandomNr();
-            Image xx = new Image();
-            xx.Source = ImageSource()
+            //Image xx = new Image();
+            //xx.Source = ImageSource();
             foreach (Button x in gdGame.Children)
             {
                 
 
                 x.Click += button1_Click;
-                x.Background= 
+               // x.Background= 
             }
 
         }

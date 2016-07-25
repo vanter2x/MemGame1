@@ -12,3 +12,4 @@ c:\visual Projects\MemGame\MemGame\obj\Debug\MemGame.Properties.Resources.resour
 c:\visual Projects\MemGame\MemGame\obj\Debug\MemGame.csproj.GenerateResource.Cache
 c:\visual Projects\MemGame\MemGame\obj\Debug\MemGame.exe
 c:\visual Projects\MemGame\MemGame\obj\Debug\MemGame.pdb
+c:\visual Projects\MemGame\MemGame\obj\Debug\MemGame.Resource1.resources
