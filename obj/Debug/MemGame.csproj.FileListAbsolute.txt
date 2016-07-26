@@ -13,3 +13,4 @@ c:\visual Projects\MemGame\MemGame\obj\Debug\MemGame.csproj.GenerateResource.Cac
 c:\visual Projects\MemGame\MemGame\obj\Debug\MemGame.exe
 c:\visual Projects\MemGame\MemGame\obj\Debug\MemGame.pdb
 c:\visual Projects\MemGame\MemGame\obj\Debug\MemGame.Resource1.resources
+c:\visual Projects\MemGame\MemGame\obj\Debug\App.baml

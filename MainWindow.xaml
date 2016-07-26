@@ -36,9 +36,9 @@
                     <RowDefinition />
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Opacity="0.5">
+                <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" ScrollViewer.VerticalScrollBarVisibility="Disabled" IsHitTestVisible="True" Style="{DynamicResource ButtonStyleNoHighlighting}" Opacity="0.5">
                     <Button.Background>
-                        <RadialGradientBrush>
+                        <RadialGradientBrush SpreadMethod="Reflect">
                             <GradientStop Color="Black" Offset="1"/>
                             <GradientStop Color="#FF2173C5"/>
                         </RadialGradientBrush>
@@ -358,7 +358,6 @@
                 </Button>
             </Grid>
         </StackPanel>
-        <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Height="50" Margin="25,30,0,0" VerticalAlignment="Top" Width="45" Click="button1_Click"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="70" Margin="10,175,0,0" VerticalAlignment="Top" Width="45" Stretch="UniformToFill"/>
+        <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Height="55" Margin="25,30,0,0" VerticalAlignment="Top" Width="50" Click="button1_Click"/>
     </Grid>
 </Window>
