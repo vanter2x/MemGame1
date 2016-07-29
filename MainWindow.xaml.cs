@@ -25,31 +25,14 @@ namespace MemGame
         public MainWindow()
         {
             InitializeComponent();
-            Style style = new Style();
-            Trigger changer = new Trigger() { Property = IsMouseOverProperty, Value = true };
-            //changer.SetValue(IsMouseOverProperty, true);
-            changer.Setters.Add(new Setter() { Property = OpacityProperty, Value = 0.2 });
-            style.Triggers.Add(changer);
-
             
-
-            foreach (Button x in gdGame.Children)
-            {
-                x.Content = "x";
-                Image image = new Image();
-                image.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri(AppDomain.CurrentDomain.BaseDirectory + "\\ico\\2.png", UriKind.Absolute));
-                x.Background = new System.Windows.Media.ImageBrush(image.Source);
-
-                //x.Click += game.ClickButton();
-            }
-            
-            
-            
-            //image1.Source = Game.LoadBitmapFromResource("Resources/2.png");
-            
-            //button1.LayoutTransform = image1;
             game = new Game(gdGame);
             game.RandomNr();
+            string xx, yy;
+            xx = "\\backg\\light.png";
+            yy = "sdf";
+            game.LoadPicture(xx, yy);
+            game.LoadButtonPicture(gdGame);
             //Image xx = new Image();
             //xx.Source = ImageSource();
             foreach (Button x in gdGame.Children)
@@ -57,6 +40,7 @@ namespace MemGame
                 
 
                 x.Click += button1_Click;
+                //x.Content = x.Tag.ToString();
                // x.Background= 
             }
 
@@ -64,7 +48,7 @@ namespace MemGame
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            game.ClickButton(sender, e);
+            game.ClickButton(sender, e,gdGame);
         }
     }
 }

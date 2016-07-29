@@ -11,9 +11,14 @@ namespace MemGame
 {
     public class Game
     {
+        Image[] buttPicture = new Image[20];
+        Image buttBackG = new Image();
+
         public List<Button> Btn = new List<Button>(); //lista Buttons
         private StackPanel stcPanel = new StackPanel();
-        Button help = new Button();
+        Button help = new Button() { Tag = 300 };
+        Button x = new Button() { Tag = 100 };
+        
         bool count = false; // pomocnicza zmienna (czy jakis button jest wciśniety)
         
         //public Game() { }
@@ -23,11 +28,32 @@ namespace MemGame
                 Btn.Add(b);
 
         }
+        
+        //ładowanie obrazów do image
+        public void LoadPicture(string bPicture, string bBackG)
+        {
+            
+            buttBackG.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri(AppDomain.CurrentDomain.BaseDirectory + bPicture, UriKind.Absolute));
+            for(int i=0;i<20;i++)
+            {
+                buttPicture[i] = new Image();
+                buttPicture[i].Source = new System.Windows.Media.Imaging.BitmapImage(new Uri(AppDomain.CurrentDomain.BaseDirectory + "\\ios\\"+(i+1).ToString()+".png", UriKind.Absolute));
+            }
+        } 
+
+        public void LoadButtonPicture(Grid grid)
+        {
+            for (int i = 0; i < 40; i++)
+                Btn[i].Background = new System.Windows.Media.ImageBrush(buttBackG.Source);
+        }
+
+
+        
         public void RandomNr() // Metoda losuje podwójne liczby z zakresu 0-20 i przypisuje do Button.Taga
         {
             List<int> number = new List<int>(); //pomocnicza lista wypełniona podwójnymi liczbami 0-20
-            for (int i = 0; i < 21; i++) number.Add(i);
-            for (int i = 0; i < 21; i++) number.Add(i);
+            for (int i = 0; i < 20; i++) number.Add(i);
+            for (int i = 0; i < 20; i++) number.Add(i);
             var ii = 0; // pomocnicza zmienna 
             Random rand = new Random();
             foreach (Button b in Btn)
@@ -42,59 +68,70 @@ namespace MemGame
                // b.Content = x;
             }
         }
-        public void ClickButton(object sender, RoutedEventArgs e) //obsługa kliknięcia na przycisk
+        public async void ClickButton(object sender, RoutedEventArgs e,Grid grid) //obsługa kliknięcia na przycisk
         {
             // stworzenie dwóch pomocniczych buttonów i przypisanie do nich naciśniętych buttonów
-            
-            Button x = new Button();
-            x = (Button)sender;
+
+
+
             // obsługa zdarzenia
             if (count == false)
             {
-                Image image = new Image();
-                image.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri(AppDomain.CurrentDomain.BaseDirectory + "\\ico\\11.png", UriKind.Absolute));
-                x.Background = new System.Windows.Media.ImageBrush(image.Source);
+                
+                x = (Button)sender;
+                //Image image = new Image();
+                //image.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri(AppDomain.CurrentDomain.BaseDirectory + "\\ios\\", UriKind.Absolute));
+                x.Background = new System.Windows.Media.ImageBrush(buttPicture[(int)x.Tag].Source);
                 count = true;
-                help = (Button)sender;
-                x.IsEnabled = false;  
+                
+
+                //help.IsEnabled = false;
+                //x.IsEnabled = false;  
             }
             else
             {
-                Image image = new Image();
-                image.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri(AppDomain.CurrentDomain.BaseDirectory + "\\ico\\11.png", UriKind.Absolute));
-                x.Background = new System.Windows.Media.ImageBrush(image.Source);
+                
+                help = (Button)sender;
+                
+                //Image image = new Image();
+                //image.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri(AppDomain.CurrentDomain.BaseDirectory + "\\ios\\17.png", UriKind.Absolute));
+                //x.Visibility = Visibility.Hidden;
+
+                help.Background = new System.Windows.Media.ImageBrush(buttPicture[(int)help.Tag].Source);
+                //MessageBox.Show("sddsad");
                 count = false;
-                System.Threading.Thread.Sleep(1000);
-                if (x.Tag.ToString() == help.Tag.ToString())
+                grid.IsEnabled = false;
+                
+
+
+                if (x.Tag.ToString() != help.Tag.ToString())
                 {
+                    await Task.Delay(1000);
+                    //image.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri(AppDomain.CurrentDomain.BaseDirectory + "\\ios\\20.png", UriKind.Absolute));
+                    x.Background = new System.Windows.Media.ImageBrush(buttBackG.Source);
+                    help.Background = x.Background;
+                    help.IsEnabled = true;
+                    grid.IsEnabled = true;
                     //MessageBox.Show("sddsad");
-                    x.Visibility = Visibility.Hidden;
-                    help.Visibility = Visibility.Hidden;
-                    //System.Threading.Thread.Sleep(1000);
+
 
                 }
-                else help.IsEnabled = true;
-
+                else
+                {
+                    await Task.Delay(1000);
+                    x.Visibility = Visibility.Hidden;
+                    help.Visibility = Visibility.Hidden;
+                    
+                    grid.IsEnabled = true;
+                }
                 //System.Windows.Media.RadialGradientBrush ccc = new System.Windows.Media.RadialGradientBrush() {  }
                // x.Background = new System.Windows.Media.r
             }
         }
 
-        public static System.Windows.Media.Imaging.BitmapImage LoadBitmapFromResource(string pathInApplication, System.Reflection.Assembly assembly = null)
-        {
-            if (assembly == null)
-            {
-                assembly = System.Reflection.Assembly.GetCallingAssembly();
-            }
-
-            if (pathInApplication[0] == '/')
-            {
-                pathInApplication = pathInApplication.Substring(1);
-            }
-            return new System.Windows.Media.Imaging.BitmapImage(new Uri(@"pack://application:,,,/" + assembly.GetName().Name + ";component/" + pathInApplication, UriKind.Absolute));
-        }
 
     }
+}
 
-    }
+    
 
