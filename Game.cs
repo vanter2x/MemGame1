@@ -11,21 +11,24 @@ namespace MemGame
 {
     public class Game
     {
-        Image[] buttPicture = new Image[20];
-        Image buttBackG = new Image();
+        private Image[] buttPicture = new Image[20];
+        private Image buttBackG = new Image();
 
-        public List<Button> Btn = new List<Button>(); //lista Buttons
+        private List<Button> Btn = new List<Button>(); //lista Buttons
         private StackPanel stcPanel = new StackPanel();
         Button help = new Button() { Tag = 300 };
         Button x = new Button() { Tag = 100 };
         
         bool count = false; // pomocnicza zmienna (czy jakis button jest wciśniety)
-        
+        int moveCunter = 0;
+        int buttCounter = 0;
         //public Game() { }
         public Game(Grid grid) //konstruktor przypisuje referencje z buttonow z mainWindow do Listy<Buttonów>
         {
             foreach (Button b in grid.Children)
                 Btn.Add(b);
+            moveCunter = 0;
+            buttCounter = 20;
 
         }
         
@@ -40,7 +43,7 @@ namespace MemGame
                 buttPicture[i].Source = new System.Windows.Media.Imaging.BitmapImage(new Uri(AppDomain.CurrentDomain.BaseDirectory + "\\ios\\"+(i+1).ToString()+".png", UriKind.Absolute));
             }
         } 
-
+        //ładowanie image dla background
         public void LoadButtonPicture(Grid grid)
         {
             for (int i = 0; i < 40; i++)
@@ -60,21 +63,25 @@ namespace MemGame
             {
                 ii = rand.Next(number.Count - 1); // losowanie liczby z listy i przypisanie do Taga
                 b.Tag = number[ii];
+                b.Visibility = Visibility.Visible;
+                b.IsEnabled = true;
+                moveCunter = 0;
+                buttCounter = 20;
                 //Image x = new Image();
                 //x.Source = "1.png";
+
+
 
                 number.RemoveAt(ii); // usunięcie wylosowanej liczby z listy
                 b.Content = b.Tag;
                // b.Content = x;
             }
         }
-        public async void ClickButton(object sender, RoutedEventArgs e,Grid grid) //obsługa kliknięcia na przycisk
+
+        
+        public async void ClickButton(object sender, RoutedEventArgs e,Grid grid, Button button) //obsługa kliknięcia na przycisk
         {
-            // stworzenie dwóch pomocniczych buttonów i przypisanie do nich naciśniętych buttonów
-
-
-
-            // obsługa zdarzenia
+               // obsługa zdarzenia
             if (count == false)
             {
                 
@@ -83,7 +90,7 @@ namespace MemGame
                 //image.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri(AppDomain.CurrentDomain.BaseDirectory + "\\ios\\", UriKind.Absolute));
                 x.Background = new System.Windows.Media.ImageBrush(buttPicture[(int)x.Tag].Source);
                 count = true;
-                
+                x.IsEnabled = false;
 
                 //help.IsEnabled = false;
                 //x.IsEnabled = false;  
@@ -100,17 +107,21 @@ namespace MemGame
                 help.Background = new System.Windows.Media.ImageBrush(buttPicture[(int)help.Tag].Source);
                 //MessageBox.Show("sddsad");
                 count = false;
+                help.IsEnabled = false;
                 grid.IsEnabled = false;
-                
+                moveCunter += 1;
+
 
 
                 if (x.Tag.ToString() != help.Tag.ToString())
                 {
+                    
                     await Task.Delay(1000);
                     //image.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri(AppDomain.CurrentDomain.BaseDirectory + "\\ios\\20.png", UriKind.Absolute));
                     x.Background = new System.Windows.Media.ImageBrush(buttBackG.Source);
                     help.Background = x.Background;
                     help.IsEnabled = true;
+                    x.IsEnabled = true;
                     grid.IsEnabled = true;
                     //MessageBox.Show("sddsad");
 
@@ -121,11 +132,14 @@ namespace MemGame
                     await Task.Delay(1000);
                     x.Visibility = Visibility.Hidden;
                     help.Visibility = Visibility.Hidden;
-                    
+                    buttCounter -= 1;
                     grid.IsEnabled = true;
                 }
-                //System.Windows.Media.RadialGradientBrush ccc = new System.Windows.Media.RadialGradientBrush() {  }
-               // x.Background = new System.Windows.Media.r
+                if (buttCounter == 0)
+                {
+                    MessageBox.Show("Brawo!!! Zakończyłeś grę, wykonyjąc ruchów: " + moveCunter.ToString());
+                    button.Visibility = Visibility.Visible;
+                }
             }
         }
 

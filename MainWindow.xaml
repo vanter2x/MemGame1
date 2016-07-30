@@ -36,47 +36,52 @@
                     <RowDefinition />
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" ScrollViewer.VerticalScrollBarVisibility="Disabled" IsHitTestVisible="True" Style="{DynamicResource ButtonStyleNoHighlighting}" Opacity="0.5"/>
-                <Button x:Name="button_Copy" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Column="1" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy1" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Column="2" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy2" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="4" Grid.Column="7" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy3" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="4" Grid.Column="6" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy4" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="4" Grid.Column="5" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy5" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="4" Grid.Column="4" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy6" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="4" Grid.Column="3" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy7" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="4" Grid.Column="2" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy8" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="4" Grid.Column="1" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy9" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="4" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy10" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="3" Grid.Column="7" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy11" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="3" Grid.Column="6" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy12" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="3" Grid.Column="5" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy13" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="3" Grid.Column="4" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy14" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="3" Grid.Column="3" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy15" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="3" Grid.Column="2" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy16" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="3" Grid.Column="1" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy17" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="3" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy18" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="2" Grid.Column="7" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy19" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="2" Grid.Column="6" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy20" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="2" Grid.Column="5" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy21" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="2" Grid.Column="4" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy22" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="2" Grid.Column="3" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy23" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="2" Grid.Column="2" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy24" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="2" Grid.Column="1" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy25" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="2" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy26" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="1" Grid.Column="7" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy27" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Column="6" Grid.Row="1" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy28" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Column="5" Grid.Row="1" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy29" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Column="4" Grid.Row="1" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy30" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Column="7" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy31" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Column="6" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy32" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Column="5" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy33" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Column="3" Grid.Row="1" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy34" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Column="2" Grid.Row="1" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy35" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Column="4" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy36" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Column="3" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy37" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="1" Grid.Column="1" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
-                <Button x:Name="button_Copy38" Content="" HorizontalAlignment="Center" Height="80" VerticalAlignment="Center" Width="80" Grid.Row="1" Opacity="0.5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" ScrollViewer.VerticalScrollBarVisibility="Disabled" IsHitTestVisible="True" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Column="1" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy1" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Column="2" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy2" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="4" Grid.Column="7" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy3" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="4" Grid.Column="6" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy4" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="4" Grid.Column="5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy5" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="4" Grid.Column="4" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy6" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="4" Grid.Column="3" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy7" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="4" Grid.Column="2" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy8" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="4" Grid.Column="1" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy9" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="4" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy10" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="3" Grid.Column="7" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy11" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="3" Grid.Column="6" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy12" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="3" Grid.Column="5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy13" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="3" Grid.Column="4" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy14" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="3" Grid.Column="3" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy15" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="3" Grid.Column="2" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy16" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="3" Grid.Column="1" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy17" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="3" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy18" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="2" Grid.Column="7" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy19" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="2" Grid.Column="6" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy20" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="2" Grid.Column="5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy21" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="2" Grid.Column="4" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy22" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="2" Grid.Column="3" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy23" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="2" Grid.Column="2" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy24" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="2" Grid.Column="1" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy25" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="2" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy26" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="1" Grid.Column="7" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy27" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Column="6" Grid.Row="1" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy28" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Column="5" Grid.Row="1" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy29" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Column="4" Grid.Row="1" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy30" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Column="7" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy31" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Column="6" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy32" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Column="5" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy33" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Column="3" Grid.Row="1" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy34" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Column="2" Grid.Row="1" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy35" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Column="4" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy36" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Column="3" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy37" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Grid.Row="1" Grid.Column="1" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
+                <Button x:Name="button_Copy38" Content="" HorizontalAlignment="Center" Height="80" VerticalAlignment="Center" Width="80" Grid.Row="1" Style="{DynamicResource ButtonStyleNoHighlighting}"/>
             </Grid>
         </StackPanel>
+        <Button x:Name="btnNewGame" Content="Button" HorizontalAlignment="Center" Height="160" VerticalAlignment="Center" Width="240" Foreground="{x:Null}" BorderBrush="{x:Null}" Style="{DynamicResource ButtonStyleNoHighlighting}" Click="btnNewGame_Click" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>
